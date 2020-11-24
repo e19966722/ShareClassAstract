@@ -17,11 +17,12 @@ public class Triangle extends AbstractShare {
             a = CorrectNumber(scan);
             b = CorrectNumber(scan);
             c = CorrectNumber(scan);
-            if (c > 0 && a > 0 && b > 0) {
-                this.a = a;
-                this.b = b;
-                this.c = c;
+
         }
+        if (c > 0 && a > 0 && b > 0) {
+            this.a = a;
+            this.b = b;
+            this.c = c;
         }
     }
     @Override
