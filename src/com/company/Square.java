@@ -1,14 +1,24 @@
 package com.company;
 
+import java.util.Scanner;
+
+import static com.company.Main.CorrectNumber;
+
 public class Square extends AbstractShare {
-    private final double width;
-    private final double length;
+    private  double width;
+    private  double length;
     public Square(double width,double length){
-        this.width=width;
-        this.length=length;
+        Scanner scan=new Scanner(System.in);
+
+        if (width>0 && length>0) {
+            this.width=width;
+            this.length=length;
+        }else {
+            CorrectNumber(scan);        }
+
     }
     @Override
-    protected double Area() {
+    public double Area() {
         return width*length;
     }
 

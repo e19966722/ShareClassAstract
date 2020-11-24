@@ -1,9 +1,12 @@
 package com.company;
 
+import static com.company.Main.CorrectNumber;
+
 public class Circle extends AbstractShare {
     private  final double radius;
     private final  double pi=Math.PI;
     public Circle(double radius){
+
         this.radius=radius;
     }
 
